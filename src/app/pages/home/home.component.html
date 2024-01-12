@@ -1,0 +1,21 @@
+<form [formGroup]="cardForm" (ngSubmit)="addCard()">
+  <mat-form-field>
+    <mat-label>Nome</mat-label>
+    <input matInput formControlName="nome" />
+  </mat-form-field>
+
+  <mat-form-field>
+    <mat-label>Descrição</mat-label>
+    <textarea matInput formControlName="descricao"></textarea>
+  </mat-form-field>
+  <button mat-raised-button mat-raised-button color="accent" type="submit">
+    Adicionar Card
+  </button>
+</form>
+<div *ngIf="cards && cards.length > 0">
+  <div *ngFor="let card of cards">
+    <h3>{{ card.nome }}</h3>
+    <p>{{ card.descricao }}</p>
+    <span>Status: {{ card.status }}</span>
+  </div>
+</div>
