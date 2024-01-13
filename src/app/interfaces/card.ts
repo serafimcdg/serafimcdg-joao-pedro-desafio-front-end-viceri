@@ -3,4 +3,5 @@ export interface Card {
   nome: string;
   descricao: string;
   status: string;
+  editing: boolean;
 }

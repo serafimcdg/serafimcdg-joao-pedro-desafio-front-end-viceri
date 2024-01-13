@@ -1,40 +1,18 @@
 {
   "cards": [
     {
-      "id": 1,
-      "nome": "Tarefa 1",
-      "descricao": "Descrição da Tarefa 1",
-      "status": "Backlog"
+      "id": "e782",
+      "nome": "João Pedro Serafim",
+      "descricao": "Desenvolvedor na Viceri | Seidor",
+      "status": "Codificação",
+      "editing": false
     },
     {
-      "id": 2,
-      "nome": "Tarefa 2",
-      "descricao": "Descrição da Tarefa 2",
-      "status": "Estacionado"
-    },
-    {
-      "id": "43bd",
-      "nome": "aaa",
-      "descricao": "aa",
-      "status": "Backlog"
-    },
-    {
-      "id": "23c5",
-      "nome": "teste",
-      "descricao": "teste",
-      "status": "Backlog"
-    },
-    {
-      "id": "88f5",
-      "nome": "aa",
-      "descricao": "aa",
-      "status": "Backlog"
-    },
-    {
-      "id": "71ef",
-      "nome": "aaa",
-      "descricao": "aaa",
-      "status": "Backlog"
+      "id": "65a6",
+      "nome": "João Pedro Serafim",
+      "descricao": "Desenvolver o Desafio Front End Viceri | Seidor",
+      "status": "Concluído",
+      "editing": false
     }
   ]
 }

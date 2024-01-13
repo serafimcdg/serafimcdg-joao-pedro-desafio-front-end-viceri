@@ -1,27 +1,34 @@
-# DesafioFrontEndViceri
+# Desafio Front End Viceri | Seidor
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.2.11.
+Desenvolvedor: João Pedro Serafim
 
-## Development server
+Desafio: É criar uma aplicação web para realizar cadastros de tarefas, onde cada
+desenvolvedor do time possa entrar na aplicação e cadastrar suas respectivas tarefas e em
+qual status está tarefa encontra-se (Ex: concluída, iniciada, bloqueada...).
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+## Desenvolvimento
 
-## Code scaffolding
+O desafio foi desenvolvido a partir de algumas inspirações, como: O Estilo Kanban (Drag and Drop) e O Trello com suas atribuições de cor, acredito que esse sistema é agradavel e funcional, o que motivou a escolha.
+O projeto foi desenvolvido em duas partes, primeiramente a configuração e estrutura do projeto. E em seguida o desenvolvimento do projeto em si. O projeto foi desenvolvido a partir da Angular v16 e também foi utilizado o json-server na sua v8.19.2, com o intuito de simular requições reais.
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+## Especificações para rodar o projeto
 
-## Build
+Para que seja possivel rodar o projeto será necessario:
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+- node v18.10.0
+- angular v16.2.0
 
-## Running unit tests
+## Rodando o projeto passo a passo
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+- Faça o download ou o gitclone do repositório
+- Acesse a pasta desafio-front-end-viceri
+- Abra dois terminais, pois será necessario rodar o angular e o json-server em portas distintas
+- No primeiro terminal rode o comando: ng serve
+- No segundo, o comando json-server --watch db.json --port 3001 , ou a porta que desejar. Lembre-se a porta default que o angular utiliza é a 4200
+- Verifique se ambos os terminais estão rodando corretamente
+- Acesse o navegador com a url: http://localhost:4200/
 
-## Running end-to-end tests
+## Comandos rapidos
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
-
-## Further help
-
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+json-server --watch db.json --port 3001
+ng serve
