@@ -22,6 +22,24 @@
   >
     Adicionar Task
   </button>
+  <div class="filter-container">
+    <input
+      placeholder="Buscar desenvolvedor"
+      [(ngModel)]="filtroNome"
+      class="text-input-new-card"
+      st
+    />
+    <button
+      mat-raised-button
+      color="primary"
+      (click)="aplicarFiltro()"
+      style="background-color: rgb(249 52 52)"
+      class="button-filter-task"
+    >
+      Buscar
+    </button>
+  </div>
+
   <mat-card class="content-card">
     <mat-card-content class="kanban-content">
       <div class="kanban-board">

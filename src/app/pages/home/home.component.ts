@@ -28,6 +28,7 @@ export class HomeComponent implements OnInit {
     descricao: '',
     status: 'Backlog',
   };
+  filtroNome: string = '';
 
   constructor(
     private cardService: CardService,
@@ -159,10 +160,19 @@ export class HomeComponent implements OnInit {
       });
     }
   }
+  aplicarFiltro() {
+    this.loadCards(); // Faz a chamada do loader para mostrar apenas os cards filtrados
+  }
 
   private loadCards() {
     this.cardService.getCards().subscribe({
       next: (cards) => {
+        //filtra por nome de desenvolvedor
+        if (this.filtroNome) {
+          cards = cards.filter((card) =>
+            card.nome.toLowerCase().includes(this.filtroNome.toLowerCase())
+          );
+        }
         this.cards = cards;
       },
       error: () => {
